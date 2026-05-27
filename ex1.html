@@ -1,11 +1,175 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Browse by Job Categories — ex1</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              poppins: ["Poppins", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="m-0 bg-[#f8f9fc] px-6 py-12 pb-16 font-poppins text-[#0b1f33]">
+    <section
+      class="mx-auto max-w-[1120px]"
+      aria-labelledby="ex1-categories-heading"
+    >
+      <h1
+        id="ex1-categories-heading"
+        class="mb-12 text-center text-[clamp(2rem,4vw,2.75rem)] font-bold leading-tight tracking-[-0.02em]"
+      >
+        Browse by<br />
+        <span
+          class="relative inline-block after:absolute after:-bottom-1 after:-left-0.5 after:-right-0.5 after:-z-10 after:h-3 after:rounded after:bg-[#ffe4d4] after:content-['']"
+          >Job</span
+        >
+        Categories
+      </h1>
+
+      <div
+        class="grid grid-cols-1 gap-6 min-[480px]:grid-cols-2 min-[901px]:grid-cols-4"
+      >
+        <!-- กล่อง1 Copy Writing -->
+        <article
+          class="relative flex min-h-[168px] flex-col justify-between rounded-[18px] border border-transparent bg-white px-6 pb-6 pt-7 shadow-[0_4px_24px_rgba(11,31,51,0.06)] transition-shadow hover:shadow-[0_8px_32px_rgba(11,31,51,0.1)]"
+        >
+          <div
+            class="flex h-[52px] w-[52px] shrink-0 items-center justify-center rounded-full bg-[#fff0e6]"
+            aria-hidden="true"
+          >
+            <svg
+              class="h-6 w-6 fill-none stroke-[#ff6b2c] [stroke-width:1.8] [stroke-linecap:round] [stroke-linejoin:round]"
+              viewBox="0 0 24 24"
+            >
+              <path d="M12 20h9" />
+              <path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z" />
+            </svg>
+          </div>
+
+          <div class="flex items-end justify-between gap-2">
+            <div class="mt-auto pt-5">
+              <h2 class="mb-1 text-[1.0625rem] font-semibold leading-snug">
+                Copy Writing
+              </h2>
+              <p class="text-[0.8125rem] text-[#8a94a6]">113 Jobs Opened</p>
+            </div>
+            <span class="ml-auto shrink-0 opacity-85" aria-hidden="true">
+              <svg
+                class="h-[18px] w-[18px] fill-none stroke-current [stroke-width:2]"
+                viewBox="0 0 24 24"
+              >
+                <path d="M5 12h14M13 6l6 6-6 6" />
+              </svg>
+            </span>
+          </div>
+        </article>
+
+        <!-- กล่อง2 Music -->
+        <article
+          class="relative flex min-h-[168px] flex-col justify-between rounded-[18px] border border-transparent bg-white px-6 pb-6 pt-7 shadow-[0_4px_24px_rgba(11,31,51,0.06)] transition-shadow hover:shadow-[0_8px_32px_rgba(11,31,51,0.1)]"
+        >
+          <div
+            class="flex h-[52px] w-[52px] shrink-0 items-center justify-center rounded-full bg-[#fff0e6]"
+            aria-hidden="true"
+          >
+            <svg
+              class="h-6 w-6 fill-none stroke-[#ff6b2c] [stroke-width:1.8] [stroke-linecap:round] [stroke-linejoin:round]"
+              viewBox="0 0 24 24"
+            >
+              <path d="M3 18v-6a9 9 0 0 1 18 0v6" />
+              <path
+                d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"
+              />
+            </svg>
+          </div>
+
+          <div class="flex items-end justify-between gap-2">
+            <div class="mt-auto pt-5">
+              <h2 class="mb-1 text-[1.0625rem] font-semibold leading-snug">
+                Music
+              </h2>
+              <p class="text-[0.8125rem] text-[#8a94a6]">55 Jobs Opened</p>
+            </div>
+            <span class="ml-auto shrink-0 opacity-85" aria-hidden="true">
+              <svg
+                class="h-[18px] w-[18px] fill-none stroke-current [stroke-width:2]"
+                viewBox="0 0 24 24"
+              >
+                <path d="M5 12h14M13 6l6 6-6 6" />
+              </svg>
+            </span>
+          </div>
+        </article>
+
+        <!-- กล่อง3 Human Resouces -->
+        <article
+          class="relative flex min-h-[168px] flex-col justify-between rounded-[18px] border border-transparent bg-white px-6 pb-6 pt-7 shadow-[0_4px_24px_rgba(11,31,51,0.06)] transition-shadow hover:shadow-[0_8px_32px_rgba(11,31,51,0.1)]"
+        >
+          <div
+            class="flex h-[52px] w-[52px] shrink-0 items-center justify-center rounded-full bg-[#fff0e6]"
+            aria-hidden="true"
+          >
+            <svg
+              class="h-6 w-6 fill-none stroke-[#ff6b2c] [stroke-width:1.8] [stroke-linecap:round] [stroke-linejoin:round]"
+              viewBox="0 0 24 24"
+            >
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+              <circle cx="9" cy="7" r="4" />
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" />
+            </svg>
+          </div>
+
+          <div class="flex items-end justify-between gap-2">
+            <div class="mt-auto pt-5">
+              <h2 class="mb-1 text-[1.0625rem] font-semibold leading-snug">
+                Human Resouces
+              </h2>
+              <p class="text-[0.8125rem] text-[#8a94a6]">25 Jobs Opened</p>
+            </div>
+            <span class="ml-auto shrink-0 opacity-85" aria-hidden="true">
+              <svg
+                class="h-[18px] w-[18px] fill-none stroke-current [stroke-width:2]"
+                viewBox="0 0 24 24"
+              >
+                <path d="M5 12h14M13 6l6 6-6 6" />
+              </svg>
+            </span>
+          </div>
+        </article>
+
+        <!-- กล่อง4 Explore 30 More Categories -->
+        <article
+          class="relative flex min-h-[168px] flex-col items-center justify-center rounded-[18px] border-0 bg-[#ff6b2c] bg-[url('data:image/svg+xml,%3Csvg%20width%3D%22120%22%20height%3D%22120%22%20viewBox%3D%220%200%20120%20120%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M0%2060%20Q30%2040%2060%2060%20T120%2060%22%20fill%3D%22none%22%20stroke%3D%22%23ff8f55%22%20stroke-width%3D%222%22%20opacity%3D%220.35%22%2F%3E%3Cpath%20d%3D%22M0%2080%20Q30%2060%2060%2080%20T120%2080%22%20fill%3D%22none%22%20stroke%3D%22%23ff8f55%22%20stroke-width%3D%222%22%20opacity%3D%220.25%22%2F%3E%3C%2Fsvg%3E')] bg-[length:140px_140px] px-6 pb-6 pt-7 text-center shadow-[0_8px_28px_rgba(255,107,44,0.35)] transition-[filter] hover:brightness-[1.03]"
+        >
+          <a
+            href="#"
+            class="inline-flex items-center gap-2.5 px-2 text-[1.0625rem] font-semibold text-white no-underline"
+          >
+            Explore 30 More Categories
+            <svg
+              class="h-5 w-5 fill-none stroke-white [stroke-width:2.2]"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <path d="M5 12h14M13 6l6 6-6 6" />
+            </svg>
+          </a>
+        </article>
+      </div>
+    </section>
+  </body>
 </html>
