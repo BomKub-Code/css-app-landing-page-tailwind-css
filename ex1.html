@@ -1,11 +1,105 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="th">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Job Categories</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            dark: '#1e293b', // สีน้ำเงินเข้มตัวอักษร
+                            orange: '#fa7041', // สีส้มหลัก
+                            lightOrange: '#fff4f0', // สีพื้นหลังไอคอน
+                            gray: '#64748b' // สีเทาซับไตเติ้ล
+                        }
+                    }
+                }
+            }
+        }
+    </script>
 </head>
-<body>
-    
+<body class="bg-white font-sans text-brand-dark selection:bg-brand-orange selection:text-white">
+
+    <!-- Container ล็อกความกว้างไว้ที่ 1200px เพื่อไม่ให้เปลี่ยนรูปร่างตามขนาดจอ (Non-responsive) -->
+    <section class="w-[1200px] mx-auto py-20 px-8">
+        
+        <!-- Header Section -->
+        <div class="text-center mb-12">
+            <h2 class="text-[40px] font-extrabold text-brand-dark leading-tight tracking-tight">
+                Browse by <br>
+                <span class="text-brand-orange">Job</span> Categories
+            </h2>
+        </div>
+
+        <!-- Grid Layout (Fixed 4 Columns) -->
+        <div class="grid grid-cols-4 gap-6">
+
+            <!-- Card 1: Digital Marketing -->
+            <div class="border border-gray-100 rounded-xl p-8 hover:shadow-xl transition-shadow duration-300 bg-white flex flex-col h-[280px] group cursor-pointer">
+                <div class="w-16 h-16 rounded-full bg-brand-lightOrange flex items-center justify-center text-brand-orange text-2xl mb-6">
+                    <i class="fa-solid fa-bullhorn"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-1">Digital Marketing</h3>
+                <p class="text-brand-gray text-sm font-medium">143 Jobs Opened</p>
+                <div class="mt-auto flex justify-end">
+                    <i class="fa-solid fa-arrow-right text-brand-dark text-lg group-hover:text-brand-orange transition-colors"></i>
+                </div>
+            </div>
+
+            <!-- Card 2: Art & Design -->
+            <div class="border border-gray-100 rounded-xl p-8 hover:shadow-xl transition-shadow duration-300 bg-white flex flex-col h-[280px] group cursor-pointer">
+                <div class="w-16 h-16 rounded-full bg-brand-lightOrange flex items-center justify-center text-brand-orange text-2xl mb-6">
+                    <i class="fa-solid fa-pen-nib"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-1">Art & Design</h3>
+                <p class="text-brand-gray text-sm font-medium">110 Jobs Opened</p>
+                <div class="mt-auto flex justify-end">
+                    <i class="fa-solid fa-arrow-right text-brand-dark text-lg group-hover:text-brand-orange transition-colors"></i>
+                </div>
+            </div>
+
+            <!-- Card 3: Accounting -->
+            <div class="border border-gray-100 rounded-xl p-8 hover:shadow-xl transition-shadow duration-300 bg-white flex flex-col h-[280px] group cursor-pointer">
+                <div class="w-16 h-16 rounded-full bg-brand-lightOrange flex items-center justify-center text-brand-orange text-2xl mb-6">
+                    <i class="fa-solid fa-dollar-sign"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-1">Accounting</h3>
+                <p class="text-brand-gray text-sm font-medium">158 Jobs Opened</p>
+                <div class="mt-auto flex justify-end">
+                    <i class="fa-solid fa-arrow-right text-brand-dark text-lg group-hover:text-brand-orange transition-colors"></i>
+                </div>
+            </div>
+
+            <!-- Card 4: Photography -->
+            <div class="border border-gray-100 rounded-xl p-8 hover:shadow-xl transition-shadow duration-300 bg-white flex flex-col h-[280px] group cursor-pointer">
+                <div class="w-16 h-16 rounded-full bg-brand-lightOrange flex items-center justify-center text-brand-orange text-2xl mb-6">
+                    <i class="fa-solid fa-camera"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-1">Photography</h3>
+                <p class="text-brand-gray text-sm font-medium">95 Jobs Opened</p>
+                <div class="mt-auto flex justify-end">
+                    <i class="fa-solid fa-arrow-right text-brand-dark text-lg group-hover:text-brand-orange transition-colors"></i>
+                </div>
+            </div>
+
+            
+
+        </div>
+    </section>
+
 </body>
 </html>
